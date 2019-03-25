@@ -18,6 +18,15 @@ OR
 $ /path/to/hello-world
 ```
 
+# Specifier & Output
+- `c`: character
+- `d or i`: Signed decimal integer
+- `e`: Scientific notation
+- `f`: Decimel floating point
+- `o`: Signed octal
+- `s`: String of characters
+- `p`: Pointer address
+- `n`: Nothing printed
 
 # References
 - [How To Compile And Run a C/C++ Code In Linux - nixCraft](https://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux/)
