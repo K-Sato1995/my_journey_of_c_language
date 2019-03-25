@@ -28,5 +28,16 @@ $ /path/to/hello-world
 - `p`: Pointer address
 - `n`: Nothing printed
 
+
+# Chars and Strings
+In C, `chars` and `strings` are treated differently.
+A `char` is a character, a string is a collection of characters.
+A `char` must be surrounded by `'' (single quotation mark)` while a `string` must be surrounded by `"" (double quotation mark)`.
+
+```c
+'c'
+"string"
+```
+
 # References
 - [How To Compile And Run a C/C++ Code In Linux - nixCraft](https://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux/)

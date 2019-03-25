@@ -16,5 +16,15 @@ int main (){
   }else{
     printf("They are different people\n");
   };
+
+  // 配列文字列は１文字単位で変更が可能
+  str1[0]= 'B'; // 文字はシングルクオテーションで囲む。
+  printf("%s\n", str1); //=> Bohn
+
+  // Pointer文字列
+  char *str3;
+  // 代入可能
+  str3 = "Pointer String";
+  printf("%s\n", str3);
   return 0;
 };
