@@ -40,4 +40,6 @@ A `char` must be surrounded by `'' (single quotation mark)` while a `string` mus
 ```
 
 # References
+- [プログラミングB](https://www.cc.kyoto-su.ac.jp/~yamada/programming/programmingB.html)
 - [How To Compile And Run a C/C++ Code In Linux - nixCraft](https://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux/)
+- [文字型と文字列](https://programming.pc-note.net/c/mojiretsu.html)
