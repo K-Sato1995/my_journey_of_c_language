@@ -3,11 +3,11 @@
 int main() {
   int number = 2;
 
-  // 変数のアドレスを表示(&変数名;)
-  printf("%p\n", &number); //=> 0x7fff59f49818
-
   // Pointerの宣言(int *pointer);
   int * pointer;
+
+  // 変数のアドレスを表示(&変数名;)
+  printf("%p\n", &number); //=> 0x7fff59f49818
 
   // アドレスを代入
   pointer = &number;

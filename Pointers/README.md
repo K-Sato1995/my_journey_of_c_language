@@ -1,5 +1,8 @@
 # Pointers
-`pointers`とはアドレスを取り扱う変数の事。
+
+`ポインタ型`とは変数や配列、関数などのアドレスを格納する型。
+
+変数はバラバラのアドレスに割り当てられるのに対し、配列は割り当てられるアドレスが連続していることが保証されている。
 
 ## ポインタの宣言
 
@@ -24,5 +27,6 @@ int *p = &x;
 ```
 
 # References
-- [C言語ポインタの基礎](https://qiita.com/lrf141/items/a3e96b315dd4f08508a9)
-- [Goのポインタ](https://k-sato1995.github.io/MyBlogFront/#/Post/16)
+
+- [C 言語ポインタの基礎](https://qiita.com/lrf141/items/a3e96b315dd4f08508a9)
+- [Go のポインタ](https://k-sato1995.github.io/MyBlogFront/#/Post/16)
