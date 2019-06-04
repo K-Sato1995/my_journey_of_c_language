@@ -29,9 +29,17 @@ int *p = &x;
 *ポインタ変数名;
 ```
 
-## ポインタと演算
+## 関数とポインタ
+
+引数としてポインタを渡し、関数内で関節演算子`*`を用いると、呼び出し側のオブジェクトの値を直接変更する事ができます。
+
+````c
+int func(int *)
+```　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
 
 # References
 
 - [C 言語ポインタの基礎](https://qiita.com/lrf141/items/a3e96b315dd4f08508a9)
 - [Go のポインタ](https://k-sato1995.github.io/MyBlogFront/#/Post/16)
+````
