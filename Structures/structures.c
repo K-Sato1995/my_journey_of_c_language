@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+// 構造体と関数
+typedef struct person3{
+  int age;
+  char sex;
+  char name[15];
+} PERSON3;
+
+PERSON3 getInfo(PERSON3 p3);
+
 int main(){
   // 構造体の型付け
   struct person {
@@ -13,17 +22,27 @@ int main(){
   struct person p1 = {24, 'M', "Tom"};
 
   // メンバの参照
-  printf("%d", p1.age); //=> 24
+  printf("%d\n", p1.age); //=> 24
 
   // typedef
-  typedef struct {
+  typedef struct person2{
     int age;
     char sex;
     char name[15];
-  } person2;
+  } PERSON2;
 
   // typedef 構造体宣言＋初期値設定
-  person2 p2 = {30, 'F', "Jack"};
+  PERSON2 p2 = {30, 'F', "Jack"};
 
-  printf("%d", p2.age); //=> 30
+  printf("%d\n", p2.age); //=> 30
+
+  // 構造体と関数
+  PERSON3 p3 = {25, 'M', "John"};
+  getInfo(p3); //=> I'm 25
 }
+
+
+
+PERSON3 getInfo(PERSON3 p3) {
+  printf("I'm %d\n", p3.age);
+};

@@ -1,9 +1,10 @@
 # Structures
-Cにはオブジェクト指向言語におけるclassというものは存在しません。
+
+C にはオブジェクト指向言語における class というものは存在しません。
 似た役割として関連する変数をひとまとめにする`structures(構造体)`が使用されます。
 
-
 ## 構造体の型付け
+
 `structures(構造体)`は以下の様に定義できる。
 
 ```c
@@ -20,6 +21,7 @@ struct person {
 ```
 
 ## 構造体の宣言 初期値設定
+
 今度は実際に構造体を宣言して構造体を使えるようにします。
 
 ```c
@@ -40,6 +42,7 @@ p1.name;
 ```
 
 ## Typedef
+
 `typedef`を用いると，既に定義されている型に，別の新しい名前をつけて定義することができる。
 
 ```c
@@ -60,6 +63,34 @@ typedef struct {
 person p1 = {24, 'M', "Tom"};
 ```
 
+# 配列のメンバ
+
+構造体のメンバに配列を指定する際にはメンバ名と添字の組みで表す。
+
+```c
+typedef struct grade {
+  char name[15];
+  int scores[5];
+}GRADE;
+```
+
+# 構造体の中の構造体
+
+構造体型メンバの１つとして構造体を使用する場合は以下のように表現する。
+
+```c
+typedef struct personal {
+  int number;
+  char *name;
+}PERSONAL;
+
+typedef struct grade {
+  PERSONAL personalData;
+  char grade;
+}GRADE;
+```
+
 ## References
-- [構造体(プログラミングB)](https://www.cc.kyoto-su.ac.jp/~yamada/programming/struct.html)
-- [構造体(納得C言語)](http://www.isl.ne.jp/pcsp/beginC/C_Language_14.html)
+
+- [構造体(プログラミング B)](https://www.cc.kyoto-su.ac.jp/~yamada/programming/struct.html)
+- [構造体(納得 C 言語)](http://www.isl.ne.jp/pcsp/beginC/C_Language_14.html)
