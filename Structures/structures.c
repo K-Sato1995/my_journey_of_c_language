@@ -39,9 +39,13 @@ int main(){
   // 構造体と関数
   PERSON3 p3 = {25, 'M', "John"};
   getInfo(p3); //=> I'm 25
+
+  // 構造体へのポインタ
+  PERSON3 *p;
+
+  p = &p3;
+  printf("Age: %d, Sex:%c, Name: %s\n", p -> age, p -> sex, p -> name); //=> Age: 25, Sex:M, Name: John
 }
-
-
 
 PERSON3 getInfo(PERSON3 p3) {
   printf("I'm %d\n", p3.age);

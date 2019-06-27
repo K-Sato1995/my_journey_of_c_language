@@ -90,6 +90,24 @@ typedef struct grade {
 }GRADE;
 ```
 
+# 構造体へのポインタ
+
+ポインタの指す先のオブジェクトが構造体である時、そのメンバを指定するには演算子`->`を利用します。
+
+```c
+typedef struct person {
+    int age;
+    char *name
+}PERSON;
+
+PERSON data1 = {25, "John"};
+PERSON *p;
+
+p = data1;
+
+printf("Age: %d, Sex:%c, Name: %s\n", p -> age, p -> name); //=> Age: 25, Name: John
+```
+
 ## References
 
 - [構造体(プログラミング B)](https://www.cc.kyoto-su.ac.jp/~yamada/programming/struct.html)
