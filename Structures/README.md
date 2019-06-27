@@ -108,6 +108,42 @@ p = data1;
 printf("Age: %d, Sex:%c, Name: %s\n", p -> age, p -> name); //=> Age: 25, Name: John
 ```
 
+# 構造体の配列
+
+構造体全体を 1 つの要素とする配列を宣言することができます。
+
+```c
+#include <stdio.h>
+#define N 3
+
+typedef struct Person {
+  int age;
+  char *name;
+}PERSON;
+
+int main(void) {
+  PERSON data[N] = {
+    {20, "John"},
+    {18, "Jack"},
+    {29, "Ben"}
+  };
+
+  int i;
+  printf("AGE | NAME\n");
+
+  for(i=0; i<N; i++){
+    printf("%d | %s\n", data[i].age, data[i].name);
+  }
+  /*
+  AGE | NAME
+20 | John
+18 | Jack
+
+29 | Ben
+  */
+}
+```
+
 ## References
 
 - [構造体(プログラミング B)](https://www.cc.kyoto-su.ac.jp/~yamada/programming/struct.html)
