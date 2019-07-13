@@ -37,4 +37,13 @@ int main(void) {
   for(i = 0; i < 2; i++) {
     printf("%s\n", strArr[i]);
   }
+
+  // 入力
+  int n;
+  char st[20];
+
+  scanf("%d", &n);
+  scanf("%s", &st);
+  printf("%d\n%s\n", n, st);
+
 }
