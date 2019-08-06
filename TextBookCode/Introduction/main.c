@@ -1,10 +1,10 @@
 #include <stdio.h>
 // 定数 (全て大文字で記述するのが慣習)
-#define SEX "MALE"
+#define NAME "K-Sato"
 
 int main(void) {
   // 出力
-  printf("%s\n", SEX);
+  printf("%s\n", NAME);
 
   // 変数
   int age = 24;
