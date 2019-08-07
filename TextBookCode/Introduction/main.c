@@ -38,6 +38,9 @@ int main(void) {
     printf("%s\n", strArr[i]);
   }
 
+  // sizeof
+  printf("sizeof(strArr) = %lu\n", sizeof(strArr)); //=> sizeof(strArr) = 20
+
   // 入力
   int n;
   char st[20];
