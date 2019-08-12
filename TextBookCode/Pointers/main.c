@@ -16,6 +16,7 @@ int main(void) {
   pointer = arr;
   printf("The size of int is %lu\n", sizeof(int)); //=> The bite of int is 4
 
+  // 1回目
   for(i=0; i < 3; i++, pointer++) {
     printf("*pointer = %d\n", *pointer);
     printf("arr[%d] = %d\n", i, arr[i]);
@@ -26,6 +27,20 @@ int main(void) {
   *pointer = 20
   arr[1] = 20
   *pointer = 30
+  arr[2] = 30
+  */
+
+  // 2回目
+  for(i=0; i < 3; i++, pointer++) {
+    printf("*pointer = %d\n", *pointer);
+    printf("arr[%d] = %d\n", i, arr[i]);
+  }
+  /*
+  *pointer = 342229242
+  arr[0] = 10
+  *pointer = 212322568
+  arr[1] = 20
+  *pointer = 1541892072
   arr[2] = 30
   */
 }
