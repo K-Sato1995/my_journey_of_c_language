@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main (void) {
   char name[] = "John";
@@ -12,4 +13,15 @@ int main (void) {
 
   char form[] = "%s is my name\n";
   printf(form, name);
+
+  // 文字列の複写
+  char des[20];
+  strcpy(des, "Hello!");
+  printf("des[] = %s\n", des); //=> des[] = Hello!
+
+  // 文字列の連結
+  char st[80] = "Happy ";
+
+  strcat(st, "birthday");
+  printf("st[] = %s\n", st); //=> st[] = Happy birthday
 }
